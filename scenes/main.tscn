@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://c8n8bcuahnkfa" path="res://scenes/map.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bfh1vww3kdmtn" path="res://scenes/guy.tscn" id="2_0wfyh"]
 
+[sub_resource type="PlaceholderMesh" id="PlaceholderMesh_0wfyh"]
+
 [node name="gojo" type="Node2D" unique_id=1411771796]
 
 [node name="mapp" parent="." unique_id=1628180260 instance=ExtResource("1_o5qli")]
@@ -13,3 +15,7 @@ scale = Vector2(0.2, 0.2)
 
 [node name="Camera2D" type="Camera2D" parent="manh" unique_id=561569184]
 scale = Vector2(2, 2)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=379584958]
+position = Vector2(-171, -48)
+mesh = SubResource("PlaceholderMesh_0wfyh")
